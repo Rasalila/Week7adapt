@@ -1,0 +1,235 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  min-height: 80px;
+  background-color: rgb(28, 31, 51);
+}
+
+/* логотип */
+.logo_header {
+  grid-area: 1/2/1/4;
+  padding: 15px 1px 15px 1px;
+  margin: 15px;
+}
+
+/* блок меню */
+.header_nav {
+  grid-area: 1/12/1/18;
+  padding: 15px 1px 15px 1px;
+  margin: 15px;
+}
+
+/* стили li в меню */
+.link_header {
+  display: inline;
+  height: 20%;
+  margin: 10px;
+
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-style: lighter;
+
+  color: white;
+  text-decoration: none;
+}
+
+/* кнопка subscribe */
+.bottom_header {
+  grid-area: 1/18/1/20;
+  height: 20%;
+  padding: 20px 1px 20px 1px;
+
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+
+  font-family: "Sen", Times, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*общий блок для текста и картинки girl_laptop*/
+.block_header {
+  display: flex;
+  justify-content: space-around;
+  min-height: 70px;
+  width: 100%;
+  margin: 80px;
+  gap: 80px;
+}
+
+/* картинка girl_laptop */
+.laptop_block_header {
+  width: 30%;
+  height: 30%;
+}
+
+/* текст слева от картинки girl_laptop */
+.header_left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+/*Featured Post*/
+.future_post {
+  font-family: "Inter", Times, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-variation-settings: "slnt" 0;
+}
+/*Step-by-step*/
+.title_header {
+  color: black;
+  font-family: "Sen", Times, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: -2px;
+}
+
+/* By John Doe l May 23, 2022 */
+.font_inter_small {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+/*Duis aute irure dolor*/
+.font_sem_grey {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6d6e76;
+}
+
+/*жёлтая кнопка read more*/
+.read_more_block_header {
+  background-color: rgb(255, 204, 0);
+  text-decoration: none;
+  text-align: center;
+  padding: 16px 48px;
+  color: black;
+  font-family: "Sen", Times, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  width: 30%;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.div_main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px;
+  padding-left: 30px;
+}
+.all_post_main {
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+.prev_next_main {
+  margin: 40px;
+  margin-left: 50%;
+}
+
+.main_capslock_one {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  margin-left: -10px;
+}
+
+.prev_main {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.next_main {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:hover {
+  background-color: rgba(255, 204, 0, 0.4);
+  /* border-radius: 60%; */
+}
+
+.container_next_section {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+}
+.div_one {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 20px 20px;
+}
+.one {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.img_one {
+  width: 40px;
+}
+.section_alone {
+  text-align: center;
+  margin: 120px;
+}
+.footer {
+  min-height: 60px;
+  background-color: rgb(28, 31, 51);
+  padding: 50px;
+}
+
+.top_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_nav {
+  display: inline;
+  position: static;
+  margin-left: 50%;
+}
+.text_footer {
+  color: white;
+  text-decoration: none;
+}
+.down_footer {
+  display: flex;
+}
+.text_down_footer {
+  width: 80%;
+}
+.icon_footer {
+  width: 20%;
+  text-align: end;
+}
+.light_grey {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  background-color: rgb(37, 41, 65);
+  margin: 30px;
+}
