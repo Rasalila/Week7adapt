@@ -32,7 +32,7 @@
   </head>
   <!-- ссылка на макет https://www.figma.com/design/5nfw2Sf69oh1SqhGLs6J9m/Finsweet?node-id=27-387&t=xkEg6RlaYyyL5OLu-0 -->
 
-  <body>
+  <body class="body">
     <!-- Тут серая шапка -->
 
     <header class="header">
@@ -53,6 +53,12 @@
             <a class="link_header" href="...">Contact us</a>
           </li>
         </ul>
+        <!-- меню бургер -->
+        <button class="nav_burger">
+          <div class="nav_strip"></div>
+          <div class="nav_strip"></div>
+          <div class="nav_strip"></div>
+        </button>
       </nav>
 
       <a class="bottom_header" href="...">Subscribe</a>
@@ -84,94 +90,147 @@
 
       <!-- тут второй блок с блоком вертикальных картинок-->
 
-      <h1 class="all_post_main">All posts</h1>
+      <h1 class="h1_all_post_main">All posts</h1>
 
-      <div class="div_main">
-        <!-- проработала одну секцию -->
+      <section class="div_main">
+        <!-- статья 1 -->
         <img
-          class="main_one"
-          src="/assets/img/two-women-in-front-of-dry-erase-board-1181533.png"
+          class="img_main_one"
+          src="assets/img/two-women-in-front-of-dry-erase-board-1181533.png"
           alt="две женщины"
         />
-        <div>
-          <p>Startup</p>
-          <a class="main_capslock_one" href="..."
-            >Design tips for designers that cover everything you need</a
-          >
-          <p>
+
+        <div class="all_posts_section_one">
+          <p class="p_up_section">Startup</p>
+          <h2 class="main_capslock_one">
+            Design tips for designers that cover everything you need
+          </h2>
+          <p class="p_grey_color">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident.
           </p>
         </div>
-        <!-- конец секции -->
 
+        <!-- статья 2 -->
         <img
-          class="main_one"
-          src="/assets/img/photo-of-people-doing-handshakes-3183197.jpg"
+          class="img_main_one"
+          src="assets/img/photo-of-people-doing-handshakes-3183197.jpg"
           alt="вид сверху на стол"
         />
-        <h2>How to build rapport with your web design clients</h2>
+        <div class="all_posts_section_one">
+          <p class="p_up_section">Business</p>
+          <h2 class="main_capslock_one">
+            How to build rapport with your web design clients
+          </h2>
+          <p class="p_grey_color">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+        </div>
 
+        <!-- статья 3 -->
         <img
-          class="main_one"
-          src="/assets/img/photo-of-woman-looking-at-man-3183173.jpg"
+          class="img_main_one"
+          src="assets/img/photo-of-woman-looking-at-man-3183173.jpg"
           alt="коллега смотрит"
         />
-        <h2>Logo design trends to avoid in 2022</h2>
+        <div class="all_posts_section_one">
+          <p class="p_up_section">Startup</p>
+          <h2 class="main_capslock_one">Logo design trends to avoid in 2022</h2>
+          <p class="p_grey_color">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+        </div>
 
+        <!-- статья 4 -->
         <img
-          class="main_one"
-          src="/assets/img/photo-of-people-walking-on-hallway-3182811.jpg"
+          class="img_main_one"
+          src="assets/img/photo-of-people-walking-on-hallway-3182811.jpg"
           alt="идут вдоль колонн"
         />
-        <h2>8 Figma design systems you can download for free today</h2>
+        <div class="all_posts_section_one">
+          <p class="p_up_section">TECHNOLOGY</p>
+          <h2 class="main_capslock_one">
+            8 Figma design systems you can download for free today
+          </h2>
+          <p class="p_grey_color">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+        </div>
 
+        <!-- статья 5 -->
         <img
-          class="main_one"
-          src="/assets/img/two-women-in-front-of-dry-erase-board-11815332.png"
+          class="img_main_one"
+          src="assets/img/two-women-in-front-of-dry-erase-board-11815332.png"
           alt="женщины разговаривают"
         />
-        <h2>Font sizes in UI design: The complete guide to follow</h2>
-      </div>
+        <div class="all_posts_section_one">
+          <p class="p_up_section">ECONOMY</p>
+          <h2 class="main_capslock_one">5</h2>
+          <p class="p_grey_color">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
+        </div>
+      </section>
+
       <!-- листать страницы -->
-      <div class="prev_next_main">
-        <a class="prev_main" href="..."> Prev </a>
-        <a class="next_main" href="...">Next ></a>
-      </div>
+      <nav class="nav_pages">
+        <ul>
+          <li class="nav_pages">
+            <a class="nav_pages" href="...">Prev</a>
+          </li>
+          <li class="nav_pages">
+            <a class="nav_pages" href="...">Next</a>
+          </li>
+        </ul>
+      </nav>
 
       <!-- секция четыре в ряд -->
-      <h2 class="all_post_main">All Categories</h2>
+      <h2 class="h2_categories">All Categories</h2>
 
       <div class="container_next_section">
-        <!-- проработала только первую секцию, далее скопировала -->
         <div class="div_one">
-          <img class="img_one" src="/assets/img/Icon.png" alt="бизнес" />
+          <img class="img_one" src="assets/icone/icon.png" alt="бизнес" />
           <a class="one" href="...">Business</a>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p class="p_grey_color">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
         </div>
-        <!-- конец секции -->
 
         <div class="div_one">
-          <img class="img_one" src="/assets/img/raketa.png" alt="стартап" />
+          <img class="img_one" src="assets/icone/shuttle.png" alt="стартап" />
           <a class="one" href="...">Startup</a>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p class="p_grey_color">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
         </div>
 
         <div class="div_one">
-          <img class="img_one" src="/assets/img/rost.png" alt="экономика" />
+          <img class="img_one" src="assets/icone/rost.png" alt="экономика" />
           <a class="one" href="...">Economy</a>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p class="p_grey_color">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
         </div>
 
         <div class="div_one">
           <img
             class="img_one"
-            src="/assets/img/business-and-trade.png"
+            src="assets/icone/business-and-trade.png"
             alt="технология"
           />
           <a class="one" href="...">Technology</a>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <p class="p_grey_color">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
         </div>
       </div>
 
@@ -180,26 +239,31 @@
         <h2 class="h2_section_alone">
           Join our team to be a part of our story
         </h2>
-        <p>
+        <p class="font_sem_grey">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
-        <a class="read_more_block_header" href="...">Join Now</a>
+        <a class="join-now_block_main" href="...">Join Now</a>
       </div>
     </main>
     <!-- футер -->
 
     <footer class="footer">
       <div class="top_footer">
-        <img src="/assets/img/Logo.png" alt="логотип" />
+        <img src="assets/icone/logo.png" alt="логотип" />
         <!-- навигация -->
         <div class="footer_nav">
-          <a class="li_header" href="...">Home</a>
-          <a class="li_header" href="...">Blog</a>
-          <a class="li_header" href="...">About us</a>
-          <a class="li_header" href="...">Contact us</a>
-          <a class="li_header" href="...">Privacy Policy</a>
+          <a class="li_footer" href="...">Home</a>
+          <a class="li_footer" href="...">Blog</a>
+          <a class="li_footer" href="...">About us</a>
+          <a class="li_footer" href="...">Contact us</a>
+          <a class="li_footer" href="...">Privacy Policy</a>
         </div>
+        <button class="nav_burger">
+          <div class="nav_strip"></div>
+          <div class="nav_strip"></div>
+          <div class="nav_strip"></div>
+        </button>
       </div>
 
       <!-- светло-серый div внутри div -->
@@ -213,15 +277,27 @@
 
       <div class="down_footer">
         <div class="text_down_footer">
-          <p class="text_footer">Finstreet 118 2561 Fintown</p>
-          <p class="text_footer">Hello@finsweet.com 020 7993 2905</p>
+          <p class="p_grey_color">Finstreet 118 2561 Fintown</p>
+          <p class="p_grey_color">Hello@finsweet.com 020 7993 2905</p>
         </div>
 
         <div class="icon_footer">
-          <img src="/assets/img/Negative.png" alt="фэйсбук" />
-          <img src="/assets/img/Vector.png" alt="твиттер" />
-          <img src="/assets/img/insta.png" alt="инстаграм" />
-          <img src="/assets/img/in.png" alt="in" />
+          <img
+            src="assets/icone/negative.png"
+            alt="фэйсбук"
+            class="icon_footer_png"
+          />
+          <img
+            src="assets/icone/vector.png"
+            alt="твиттер"
+            class="icon_footer_png"
+          />
+          <img
+            src="assets/icone/insta.png"
+            alt="инстаграм"
+            class="icon_footer_png"
+          />
+          <img src="assets/icone/in.png" alt="in" class="icon_footer_png" />
         </div>
       </div>
     </footer>

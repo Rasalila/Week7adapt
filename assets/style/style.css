@@ -1,35 +1,34 @@
+.body {
+  min-width: 300px;
+  margin: 0;
+}
+
 .header {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  min-height: 80px;
+  min-height: 30px;
   background-color: rgb(28, 31, 51);
 }
 
 /* логотип */
 .logo_header {
-  grid-area: 1/2/1/4;
-  padding: 15px 1px 15px 1px;
-  margin: 15px;
+  max-width: 140px;
+  max-height: 28.35px;
 }
 
 /* блок меню */
 .header_nav {
-  grid-area: 1/12/1/18;
   padding: 15px 1px 15px 1px;
-  margin: 15px;
 }
 
-/* стили li в меню */
+/* стили li в меню 18px=1.125em */
 .link_header {
   display: inline;
-  height: 20%;
   margin: 10px;
 
   font-family: "Sen", sans-serif;
-  font-size: 18px;
-  font-style: lighter;
+  font-size: 1.125em;
 
   color: white;
   text-decoration: none;
@@ -37,164 +36,284 @@
 
 /* кнопка subscribe */
 .bottom_header {
-  grid-area: 1/18/1/20;
-  height: 20%;
-  padding: 20px 1px 20px 1px;
-
   text-align: center;
+  padding: 1% 2% 1% 2%;
+
+  font-family: "Sen", Times, sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  font-style: normal;
+
   color: black;
   text-decoration: none;
   background-color: white;
+}
 
-  font-family: "Sen", Times, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  font-style: normal;
+/* меню бургер */
+.nav_burger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(60, 67, 104);
+}
+.nav_strip {
+  width: 80%;
+  height: 2px;
+  background-color: white;
 }
 
 /*общий блок для текста и картинки girl_laptop*/
 .block_header {
   display: flex;
-  justify-content: space-around;
-  min-height: 70px;
-  width: 100%;
-  margin: 80px;
-  gap: 80px;
+  justify-content: space-evenly;
+  min-width: 300px;
+  margin-top: 5%;
 }
 
 /* картинка girl_laptop */
 .laptop_block_header {
+  align-self: center;
   width: 30%;
-  height: 30%;
 }
 
 /* текст слева от картинки girl_laptop */
 .header_left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 33%;
   height: 100%;
 }
 
 /*Featured Post*/
 .future_post {
   font-family: "Inter", Times, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   letter-spacing: 3px;
-  font-variation-settings: "slnt" 0;
+  color: #232536;
 }
-/*Step-by-step*/
+/*Step-by-step 36px=2.25em*/
 .title_header {
-  color: black;
   font-family: "Sen", Times, sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: 2.25em;
   letter-spacing: -2px;
+  color: #232536;
+  margin: 0;
 }
 
-/* By John Doe l May 23, 2022 */
+/* By John Doe l May 23, 2022 14px=0.875em */
 .font_inter_small {
-  font-family: "Inter";
+  font-family: "Inter", Times, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #4c4c4c;
 }
 
 /*Duis aute irure dolor*/
 .font_sem_grey {
-  font-family: "Inter";
+  font-family: "Inter", Times, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   color: #6d6e76;
 }
 
 /*жёлтая кнопка read more*/
 .read_more_block_header {
-  background-color: rgb(255, 204, 0);
-  text-decoration: none;
-  text-align: center;
+  width: 100px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
   padding: 16px 48px;
-  color: black;
+
   font-family: "Sen", Times, sans-serif;
-  font-optical-sizing: auto;
+  font-size: 1em;
   font-weight: 700;
   font-style: normal;
-  width: 30%;
-  margin-left: 5px;
-  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+
+  background-color: rgb(255, 204, 0);
 }
 
+/* надпись all posts 48px=3em*/
+.h1_all_post_main {
+  margin-bottom: 40px;
+  margin-left: 8%;
+  font-family: "Sen", Times, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  letter-spacing: -2px;
+  color: #232536;
+}
+
+/* общий второй блок */
 .div_main {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: repeat(5, 1fr);
-  gap: 30px;
-  padding-left: 30px;
-}
-.all_post_main {
-  padding-left: 30px;
-  margin-bottom: 40px;
-}
-.prev_next_main {
-  margin: 40px;
-  margin-left: 50%;
+  grid-template-columns: 30% 60%;
+  min-width: 10%;
+  min-height: 10%;
+  gap: 40px;
+  margin-left: 15%;
 }
 
+/* первый блок текстов*/
+
+.img_main_one {
+  width: 100%;
+}
+
+/* startup */
+.p_up_section {
+  font-family: "Inter", Times, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #592ea9;
+}
+
+/* заголовок статьи 35px=2.1875em*/
 .main_capslock_one {
-  font-size: 25px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px;
-  color: black;
-  margin-left: -10px;
+  width: 60%;
+  font-family: "Sen", Times, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1875em;
+  letter-spacing: -2px;
+  color: #232536;
 }
 
-.prev_main {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.next_main {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-a:hover {
-  background-color: rgba(255, 204, 0, 0.4);
-  /* border-radius: 60%; */
+/* серый текст статьи */
+.p_grey_color {
+  width: 80%;
+  font-family: "Inter", Times, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  color: #6d6e76;
 }
 
+/* листать prev-next 24px*/
+
+.nav_pages {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Sen", Times, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  color: #6d6e76;
+}
+/* при наведении 28px*/
+.nav_pages :hover {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #232536;
+}
+
+/* all categories 36px=2.25em */
+.h2_categories {
+  font-family: "Sen", Times, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25em;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+  margin-left: 8%;
+  color: #232536;
+}
+
+/* секция четыре в ряд */
 .container_next_section {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
-  gap: 70px;
+  width: 86%;
+  gap: 5.5%;
+  margin-left: 8%;
 }
+
 .div_one {
   display: flex;
   flex-direction: column;
-  padding: 20px 40px 20px 20px;
+  padding: 20px;
+  gap: 3%;
 }
+/* при наведении 28px=1.75em*/
+.container_next_section :hover {
+  background-color: rgb(255, 204, 0);
+}
+
 .one {
-  font-size: 20px;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75em;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  letter-spacing: -1px;
+  color: #232536;
 }
+/* текст ссылки */
 .img_one {
   width: 40px;
 }
+
+/* секция посередине */
 .section_alone {
-  text-align: center;
-  margin: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 7% 39% 7% 39%;
 }
+
+/* заготовок join our team 36px=2.25em*/
+.h2_section_alone {
+  width: 100%;
+  text-align: center;
+  font-family: "Sen", Times, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25em;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+  color: #232536;
+}
+/* кнопка join now */
+.join-now_block_main {
+  width: 100px;
+  height: 20px;
+  margin-top: 20px;
+  margin: auto;
+  padding: 16px 48px;
+
+  font-family: "Sen", Times, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+
+  background-color: rgb(255, 204, 0);
+}
+
 .footer {
   min-height: 60px;
   background-color: rgb(28, 31, 51);
@@ -206,30 +325,175 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
+
 .footer_nav {
   display: inline;
   position: static;
   margin-left: 50%;
 }
+
+.li_footer {
+  display: inline;
+  margin: 10px;
+
+  font-family: "Sen", sans-serif;
+  font-size: 1.125em;
+
+  color: white;
+  text-decoration: none;
+}
+
 .text_footer {
   color: white;
   text-decoration: none;
 }
+
 .down_footer {
   display: flex;
 }
+
 .text_down_footer {
   width: 80%;
 }
+
 .icon_footer {
   width: 20%;
   text-align: end;
+}
+
+.icon_footer_png {
+  margin: 12px;
 }
 .light_grey {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 150px;
-  background-color: rgb(37, 41, 65);
   margin: 30px;
+  padding: 5px;
+  background-color: rgb(37, 41, 65);
+}
+
+.h_light_grey {
+  font-family: "Sen", Times, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.15em;
+  letter-spacing: -2px;
+  margin: 2px;
+  color: white;
+}
+
+/* мои запросы */
+/* экран до 1080 */
+@media screen and (max-width: 1080px) {
+  .link_header {
+    font-size: 1.1em;
+  }
+  .title_header {
+    font-size: 2em;
+  }
+
+  .h1_all_post_main {
+    font-size: 2.5em;
+  }
+  .one {
+    font-size: 1.5em;
+  }
+
+  .h2_section_alone {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .h_light_grey {
+    font-size: 2em;
+  }
+}
+
+/* экран до 990px */
+@media screen and (max-width: 990px) {
+  .container_next_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* экран до 768px */
+@media screen and (max-width: 768px) {
+  .nav_burger {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .menu_header {
+    display: none;
+  }
+
+  .footer_nav {
+    display: none;
+  }
+
+  .block_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .laptop_block_header {
+    min-width: 290px;
+    min-height: 218px;
+    margin-top: 20px;
+  }
+
+  .header_left {
+    width: 70%;
+  }
+
+  .read_more_block_header {
+    margin: auto;
+  }
+
+  .join-now_block_main {
+    margin: 0;
+  }
+
+  .div_main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main_capslock_one {
+    font-size: 2em;
+  }
+
+  .h2_categories {
+    font-size: 2em;
+  }
+
+  .container_next_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 50%;
+  }
+
+  .one {
+    font-size: 1em;
+  }
+
+  .h2_section_alone {
+    margin-top: 100px;
+  }
+
+  .h_light_grey {
+    font-size: 1.6em;
+  }
+
+  .light_grey {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
